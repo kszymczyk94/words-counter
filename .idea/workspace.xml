@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e1de99b-9c0b-4923-82ff-fdb8417cd1d5" name="Default Changelist" comment="">
+    <list default="true" id="5e1de99b-9c0b-4923-82ff-fdb8417cd1d5" name="Default Changelist" comment="Near final version">
       <change afterPath="$PROJECT_DIR$/src/test/java/CountInFileTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/FileCreatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ergerwgrt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/erterwt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CountInFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountInFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FilePath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AppMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CountInFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CountInFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FileCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FilePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FilePath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/words-counter.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Menu.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +61,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileCreatorTest.createFile">
+  <component name="RunManager" selected="Application.AppMain">
     <configuration name="AppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppMain" />
       <module name="words-counter" />
@@ -77,11 +69,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileCreatorTest.createFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountInFileTest.countAllSign" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="words-counter" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FileCreatorTest" />
-      <option name="METHOD_NAME" value="createFile" />
+      <option name="MAIN_CLASS_NAME" value="CountInFileTest" />
+      <option name="METHOD_NAME" value="countAllSign" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountInFileTest.countAllWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="words-counter" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CountInFileTest" />
+      <option name="METHOD_NAME" value="countAllWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountInFileTest.countEachWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="words-counter" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CountInFileTest" />
+      <option name="METHOD_NAME" value="countEachWord" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountInFileTest.countSelectWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="words-counter" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CountInFileTest" />
+      <option name="METHOD_NAME" value="countSelectWord" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,8 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileCreatorTest.createFile" />
         <item itemvalue="Application.AppMain" />
+        <item itemvalue="JUnit.CountInFileTest.countAllWords" />
+        <item itemvalue="JUnit.CountInFileTest.countAllSign" />
+        <item itemvalue="JUnit.CountInFileTest.countSelectWord" />
+        <item itemvalue="JUnit.CountInFileTest.countEachWord" />
       </list>
     </recent_temporary>
   </component>
@@ -106,8 +131,16 @@
       <updated>1581763233077</updated>
       <workItem from="1581763236731" duration="23217000" />
       <workItem from="1581851712968" duration="50999000" />
-      <workItem from="1582015855240" duration="16222000" />
+      <workItem from="1582015855240" duration="20906000" />
     </task>
+    <task id="LOCAL-00001" summary="Near final version">
+      <created>1582043572663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582043572663</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +158,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Near final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Near final version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1368" y="77" key="#Auto_Import" timestamp="1582042211205">
@@ -149,50 +186,50 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1581945340625" />
-    <state x="-1476" y="-72" key="CommitChangelistDialog2" timestamp="1582043548669">
+    <state x="-1476" y="-72" key="CommitChangelistDialog2" timestamp="1582043570361">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state x="-1476" y="-72" key="CommitChangelistDialog2/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582043548669" />
+    <state x="-1476" y="-72" key="CommitChangelistDialog2/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582043570361" />
     <state x="370" y="25" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1581948571571" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1582043454669">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1582048013295">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582043454669" />
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582048013295" />
     <state width="1557" height="217" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1581948529189" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1582043454669">
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1582048013295">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582043454669" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582048013295" />
     <state width="1557" height="217" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1581948529189" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1582043454669">
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1582048013294">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582043454669" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582048013294" />
     <state width="1557" height="217" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1581948529189" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1582043454669">
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1582048013295">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582043454669" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582048013295" />
     <state width="1557" height="217" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1581948529189" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582040488868">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582045603343">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582040488868" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582045603343" />
     <state width="1557" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1581946473159" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582040488868">
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582045603343">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582040488868" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582045603343" />
     <state width="1557" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1581946473158" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582040488868">
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582045603343">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582040488868" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582045603343" />
     <state width="1557" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1581946473158" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582040488868">
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582045603343">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582040488868" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582045603343" />
     <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1581946473159" />
     <state x="-1584" y="-96" key="SettingsEditor" timestamp="1582041314517">
       <screen x="-1920" y="-102" width="1920" height="1040" />
@@ -221,436 +258,6 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1581925529033" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
-          <line>98</line>
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="131" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="134" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="136" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="155" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="157" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="165" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="166" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="169" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="170" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="173" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="175" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="176" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="177" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="178" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="179" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="180" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="181" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="182" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="185" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="186" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="187" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="188" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="189" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="191" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="192" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="193" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="194" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="195" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="196" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="197" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="199" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="200" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="202" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="205" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="206" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="208" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="209" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
-          <line>109</line>
-          <option name="timeStamp" value="210" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="211" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="212" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="213" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
-          <line>129</line>
-          <option name="timeStamp" value="214" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="216" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/FileCreator.java</url>
-          <line>13</line>
-          <properties class="FileCreator" method="setNameWriteText">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/CountInFile.java</url>
-          <line>47</line>
-          <properties class="CountInFile" method="countAllWords">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/FilePath.java</url>
-          <line>13</line>
-          <properties class="FilePath" method="getPath">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="215" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/words_counter$AppMain.ic" NAME="AppMain Coverage Results" MODIFIED="1581859192230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

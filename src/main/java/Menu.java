@@ -119,7 +119,7 @@ public class Menu {
                     System.out.println();
                     System.out.println();
                     System.out.println();
-                    System.out.println(CountInFile.countAllWords());
+                    System.out.println("Liczba wyrazów w pliku to: " + CountInFile.countAllWords());
                 } else {
                     System.out.println("Najpierw stwórz lub wybierz plik.");
                     showMenu();
@@ -200,7 +200,7 @@ public class Menu {
                     System.out.println();
                     System.out.println();
                     System.out.println();
-                    System.out.println("W tym pliku znajduje się: " + CountInFile.countAllSign() + " znak(i/ów))");
+                    System.out.println("Liczba znaków tym pliku to: " + CountInFile.countAllSign());
                     System.out.print(CountInFile.countAllSign());
                 } else {
                     System.out.println("Najpierw stwórz lub wybierz plik.");

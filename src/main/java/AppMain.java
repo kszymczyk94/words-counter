@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AppMain {
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws IOException {
 
 
         Menu menu = new Menu();

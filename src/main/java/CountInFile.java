@@ -73,7 +73,7 @@ public class CountInFile {
         }return 0;
     }
 
-    public static void countSelectWord(Map<String, Integer> words, String selectWord) throws FileNotFoundException {
+    public static int countSelectWord(Map<String, Integer> words, String selectWord) throws FileNotFoundException {
         int qtySelect = 0;
         words.clear();
         try {
@@ -94,12 +94,12 @@ public class CountInFile {
                 System.out.println("Słowo " + selectWord + " występuje w pliku " + qtySelect + (qtySelect > 1 ? " razy." : " raz."));
             } else {
                 System.out.println("W pliku nie występuje wyraz \"" + selectWord + "\".");
-            }
+            }return qtySelect;
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.out.println("Nie podano ścieżki pliku lub podana ścieżka jest nieprawidłowa.");
-        }
+        }return qtySelect;
 
 
     }
