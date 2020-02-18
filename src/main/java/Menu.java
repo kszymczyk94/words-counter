@@ -17,12 +17,17 @@ public class Menu {
         }
     }
 
+    public void waitForEnter() {
+        Scanner scWaitForEnter = new Scanner(System.in);
+        scWaitForEnter.hasNextLine();
+
+    }
+
     private int getInput() {
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
         while (choice < 0 || choice > 7) {
             try {
-                //System.out.println("Wybierz opcję: ");
                 choice = Integer.parseInt(scanner.nextLine());
 
             } catch (NumberFormatException e) {
@@ -73,76 +78,142 @@ public class Menu {
                 System.out.println();
                 FilePath filePath = new FilePath();
                 filePath.takePath(1);
+                System.out.println("Ścieżka poprawna, wciśnij enter aby wrócić do menu.");
+                waitForEnter();
                 showMenu();
-                //System.out.println("[Q] - powrót do menu");
 
                 break;
 
             case 2:
-                System.out.println("[2]");
-                FileCreator fileCreator = new FileCreator();;
+                System.out.println("|================================================================|");
+                System.out.println("|                          WORDS COUNTER                         |");
+                System.out.println("|                                                                |");
+                System.out.println("|================================================================|");
+                System.out.println("|                                                                |");
+                System.out.println("|                                                                |");
+                System.out.println("|                   [2] Utwórz nowy plik tekstowy                |");
+                System.out.println("-----------------------------------------------------------------");
+                System.out.println();
+                System.out.println();
+                System.out.println();
+                FileCreator fileCreator = new FileCreator();
                 ArrayList<String> textList = new ArrayList<>();
-                System.out.println("Podaj nazwę pliku (opcjonalnie wraz ze ścieżką: )");
-                String fileName;
-                do{
-                    System.out.println("Nazwa pliku musi zawierać rozszerzenie .txt");
-                    Scanner scCreateFileName = new Scanner(System.in);
-                    fileName = scCreateFileName.nextLine();
+                fileCreator.createFile(fileCreator.setNameWriteText(textList), textList);
+                System.out.println("Wciśnij enter aby wrócić do menu.");
+                waitForEnter();
+                runMenu();
 
-                }while(!fileName.endsWith(".txt"));
-
-                Scanner scTextToFile = new Scanner(System.in);
-                System.out.println("Podaj ilość wierszy w pliku: ");
-                int size = scTextToFile.nextInt();
-
-                System.out.println("Plik będzie miał " + size + " wierszy, wpisz tekst potwierdzając każdą linie klawiszem Enter: ");
-
-                if (scTextToFile.nextLine().isEmpty()) System.out.println("<");
-                for (int i = 0; i < size; i++) {
-                    if (scTextToFile.hasNextLine() && i < size) {
-                        textList.add(i, scTextToFile.nextLine());
-                    } else scTextToFile.close();
-                }
-
-
-                fileCreator.createFile(fileName, textList);
-                //scTextToFile.close();
 
                 break;
 
             case 3:
-                System.out.println("[3]");
-                System.out.println(CountInFile.countAllWords());
+                if (FilePath.getPath() != null) {
+                    System.out.println("|================================================================|");
+                    System.out.println("|                          WORDS COUNTER                         |");
+                    System.out.println("|                                                                |");
+                    System.out.println("|================================================================|");
+                    System.out.println("|                                                                |");
+                    System.out.println("|                                                                |");
+                    System.out.println("|                   [3] Policz ilość słów w pliku                |");
+                    System.out.println("-----------------------------------------------------------------");
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println(CountInFile.countAllWords());
+                } else {
+                    System.out.println("Najpierw stwórz lub wybierz plik.");
+                    showMenu();
+                }
+                System.out.println("Wciśnij enter aby wrócić do menu.");
+                waitForEnter();
+                runMenu();
                 break;
 
             case 4:
-                System.out.println("[4]");
-                Map<String, Integer> words = new HashMap<>();
-                CountInFile.countEachWord(words);
-                words.entrySet().forEach(stringIntegerEntry -> {
-                    System.out.println("Słowo " + "\"" + stringIntegerEntry.getKey() + "\"" + " wystąpiło: " + stringIntegerEntry.getValue());
-                });
+                if (FilePath.getPath() != null) {
+
+                    System.out.println("|================================================================|");
+                    System.out.println("|                          WORDS COUNTER                         |");
+                    System.out.println("|                                                                |");
+                    System.out.println("|================================================================|");
+                    System.out.println("|                                                                |");
+                    System.out.println("|                                                                |");
+                    System.out.println("|     [4] Policz liczbę wystąpień każdego ze słów w tekście      |");
+                    System.out.println("-----------------------------------------------------------------");
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    Map<String, Integer> words = new HashMap<>();
+                    CountInFile.countEachWord(words);
+                    words.entrySet().forEach(stringIntegerEntry -> {
+                        System.out.println("Słowo " + "\"" + stringIntegerEntry.getKey() + "\"" + " wystąpiło: " + stringIntegerEntry.getValue());
+                    });
+                } else {
+                    System.out.println("Najpierw stwórz lub wybierz plik.");
+                }
+                System.out.println("Wciśnij enter aby wrócić do menu.");
+                waitForEnter();
+                runMenu();
 
                 break;
 
             case 5:
-                System.out.println("[5]");
-                Map<String, Integer> wordsSel = new HashMap<>();
-                System.out.println("Podaj słowo jakiego chcesz szukać w tekście");
-                Scanner scSelectWord = new Scanner(System.in);
-                String selectWord = scSelectWord.nextLine();
-                CountInFile.countSelectWord(wordsSel, selectWord);
+                if (FilePath.getPath() != null) {
+
+                    System.out.println("|================================================================|");
+                    System.out.println("|                          WORDS COUNTER                         |");
+                    System.out.println("|                                                                |");
+                    System.out.println("|================================================================|");
+                    System.out.println("|                                                                |");
+                    System.out.println("|                                                                |");
+                    System.out.println("|         [5] Policz liczbę wystąpień konkretnego słowa          |");
+                    System.out.println("-----------------------------------------------------------------");
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    Map<String, Integer> wordsSel = new HashMap<>();
+                    System.out.println("Podaj wyraz który chcesz szukać w pliku.");
+                    Scanner scSelectWord = new Scanner(System.in);
+                    String selectWord = scSelectWord.nextLine();
+                    CountInFile.countSelectWord(wordsSel, selectWord);
+                } else {
+                    System.out.println("Najpierw stwórz lub wybierz plik.");
+
+                }
+                System.out.println("Wciśnij enter aby wrócić do menu.");
+                waitForEnter();
+                runMenu();
 
                 break;
 
             case 6:
-                System.out.println("[6]");
-                System.out.println(CountInFile.countAllSign());
+                if (FilePath.getPath() != null) {
 
+                    System.out.println("|================================================================|");
+                    System.out.println("|                          WORDS COUNTER                         |");
+                    System.out.println("|                                                                |");
+                    System.out.println("|================================================================|");
+                    System.out.println("|                                                                |");
+                    System.out.println("|                                                                |");
+                    System.out.println("|                   [6] Policz liczbę znaków                     |");
+                    System.out.println("-----------------------------------------------------------------");
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println("W tym pliku znajduje się: " + CountInFile.countAllSign() + " znak(i/ów))");
+                    System.out.print(CountInFile.countAllSign());
+                } else {
+                    System.out.println("Najpierw stwórz lub wybierz plik.");
+
+                }
+                System.out.println("Wciśnij enter aby wrócić do menu.");
+                waitForEnter();
+                runMenu();
 
                 break;
 
             case 7:
+                System.out.println("KONIEC");
                 exit = true;
                 break;
 

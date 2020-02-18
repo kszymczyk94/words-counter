@@ -7,10 +7,17 @@ import java.io.File;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-@Getter
-@Setter
+
 public class FilePath {
-    private String path;
+    private static String path;
+
+    public static String getPath() {
+        return path;
+    }
+
+    public static void setPath(String path) {
+        FilePath.path = path;
+    }
 
     public void takePath(int selection) {
         //boolean fileExist = false;
@@ -33,11 +40,11 @@ public class FilePath {
             }
         } else {
             if (isFileExist(path)) {
-                System.out.println("Tutaj jestem");
+                //System.out.println("Tutaj jestem");
                 CountInFile.setFilePath(Paths.get(path).toString());
             } else {
                 System.out.println(path);
-                System.out.println("Plik nie istnieje lub podana ścieżka jest nie prawidłowa. Spróbuj ponownie lub wciśnij shift + Q aby powrócić do menu.");
+                System.out.println("Plik nie istnieje lub podana ścieżka jest nieprawidłowa. Spróbuj ponownie lub wciśnij shift + Q aby powrócić do menu.");
             }
 
         }

@@ -1,6 +1,5 @@
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import lombok.Getter;
-import lombok.Setter;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,42 +22,55 @@ public class CountInFile {
         CountInFile.filePath = filePath;
     }
 
+
     public static void countEachWord(Map<String, Integer> words) throws FileNotFoundException {
-        Integer count = 0;
-        words.clear();
-        Scanner file = new Scanner(new File(filePath));
-        while (file.hasNext()) {
-            String word = file.next().replaceAll("\\p{Punct}", "").toLowerCase();
-            count = words.get(word);
-            if (count != null)
-                count++;
-            else
-                count = 1;
-            words.put(word, count);
+        try {
+            Integer count = 0;
+            words.clear();
+            Scanner file = new Scanner(new File(filePath));
+            while (file.hasNext()) {
+                String word = file.next().replaceAll("\\p{Punct}", "").toLowerCase();
+                count = words.get(word);
+                if (count != null)
+                    count++;
+                else
+                    count = 1;
+                words.put(word, count);
 
+            }
+            file.close();
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+            System.out.println("Nie podano ścieżki pliku lub podana ścieżka jest nieprawidłowa.");
         }
-        file.close();
-
     }
 
     public static int countAllWords() throws FileNotFoundException {
-
-        Scanner file = new Scanner(new File(filePath));
-        int qty = 0;
-        while (file.hasNext()) {
-            qty = qty + 1;
-            String word = file.next().replaceAll("\\p{Punct}", "").toLowerCase();
-        }
-        file.close();
-        return qty;
+        try {
+            Scanner file = new Scanner(new File(filePath));
+            int qty = 0;
+            while (file.hasNext()) {
+                qty = qty + 1;
+                String word = file.next().replaceAll("\\p{Punct}", "").toLowerCase();
+            }
+            file.close();
+            return qty;
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+            System.out.println("Nie podano ścieżki pliku lub podana ścieżka jest nieprawidłowa.");
+        } return 0;
     }
 
     public static int countAllSign() throws FileNotFoundException, IOException {
 
-        Scanner file = new Scanner(new File(filePath));
-        int qty;
-        return qty = Files.lines(Paths.get(filePath)).mapToInt(String::length).sum();
-
+        try {
+            Scanner file = new Scanner(new File(filePath));
+            int qty;
+            return qty = Files.lines(Paths.get(filePath)).mapToInt(String::length).sum();
+        }catch(FileNotFoundException e){
+            e.printStackTrace();
+            System.out.println("Nie podano ścieżki pliku lub podana ścieżka jest nieprawidłowa.");
+        }return 0;
     }
 
     public static void countSelectWord(Map<String, Integer> words, String selectWord) throws FileNotFoundException {
@@ -81,7 +93,7 @@ public class CountInFile {
                 qtySelect = words.get(selectWord);
                 System.out.println("Słowo " + selectWord + " występuje w pliku " + qtySelect + (qtySelect > 1 ? " razy." : " raz."));
             } else {
-                System.out.println("W pliku nie występuje słwo: " + selectWord + ".");
+                System.out.println("W pliku nie występuje wyraz \"" + selectWord + "\".");
             }
 
         } catch (FileNotFoundException e) {
