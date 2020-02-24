@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e1de99b-9c0b-4923-82ff-fdb8417cd1d5" name="Default Changelist" comment="Near final version">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CountInFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FileCreatorTest.java" afterDir="false" />
+    <list default="true" id="5e1de99b-9c0b-4923-82ff-fdb8417cd1d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountInFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountInFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FilePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CountInFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CountInFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/api/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/api/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commons/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commons/FilePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/api/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/api/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/commons/FilePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/commons/FilePath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/words-counter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/words-counter-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +24,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="70a89dbdf7a38db9eb8e965fdecc9298d2a22f64" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="pluginUpdatePolicy" value="UPDATE" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -52,6 +60,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -60,21 +69,24 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\test" />
+      <recent name="C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\test\test\resources" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.AppMain">
     <configuration name="AppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppMain" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AppMain" />
       <module name="words-counter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountInFileTest.countAllSign" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountInFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="words-counter" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CountInFileTest" />
-      <option name="METHOD_NAME" value="countAllSign" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,21 +101,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountInFileTest.countEachWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="words-counter" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CountInFileTest" />
-      <option name="METHOD_NAME" value="countEachWord" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="FileCreatorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountInFileTest.countSelectWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileCreatorTest.createFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="words-counter" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CountInFileTest" />
-      <option name="METHOD_NAME" value="countSelectWord" />
+      <option name="MAIN_CLASS_NAME" value="FileCreatorTest" />
+      <option name="METHOD_NAME" value="createFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,10 +123,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AppMain" />
+        <item itemvalue="JUnit.CountInFileTest" />
         <item itemvalue="JUnit.CountInFileTest.countAllWords" />
-        <item itemvalue="JUnit.CountInFileTest.countAllSign" />
-        <item itemvalue="JUnit.CountInFileTest.countSelectWord" />
-        <item itemvalue="JUnit.CountInFileTest.countEachWord" />
+        <item itemvalue="JUnit.FileCreatorTest.createFile" />
+        <item itemvalue="JUnit.FileCreatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +143,7 @@
       <workItem from="1581763236731" duration="23217000" />
       <workItem from="1581851712968" duration="50999000" />
       <workItem from="1582015855240" duration="20906000" />
+      <workItem from="1582564166252" duration="4291000" />
     </task>
     <task id="LOCAL-00001" summary="Near final version">
       <created>1582043572663</created>
@@ -140,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582043572663</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add packages and resources folder in test.">
+      <created>1582567975100</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582567975100</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,16 +180,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Near final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Near final version" />
+    <MESSAGE value="Add packages and resources folder in test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add packages and resources folder in test." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1368" y="77" key="#Auto_Import" timestamp="1582042211205">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
     <state x="-1368" y="77" key="#Auto_Import/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582042211205" />
-    <state x="392" y="89" key="#Plugins" timestamp="1581801714675">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="-1450" y="6" key="#Plugins" timestamp="1582563662873">
+      <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
+    <state x="-1450" y="6" key="#Plugins/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582563662873" />
     <state x="392" y="89" key="#Plugins/0.0.1600.860@0.0.1600.860" timestamp="1581801714675" />
     <state x="-1450" y="6" key="#Project_Structure" timestamp="1582041399039">
       <screen x="-1920" y="-102" width="1920" height="1040" />
@@ -186,30 +207,34 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1581945340625" />
-    <state x="-1476" y="-72" key="CommitChangelistDialog2" timestamp="1582043570361">
+    <state x="-1476" y="-72" key="CommitChangelistDialog2" timestamp="1582567973230">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state x="-1476" y="-72" key="CommitChangelistDialog2/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582043570361" />
+    <state x="-1476" y="-72" key="CommitChangelistDialog2/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582567973230" />
     <state x="370" y="25" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1581948571571" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1582048013295">
+    <state x="-1305" y="16" key="FileChooserDialogImpl" timestamp="1582564776931">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582048013295" />
+    <state x="-1305" y="16" key="FileChooserDialogImpl/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582564776931" />
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1582568492549">
+      <screen x="-1920" y="-102" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582568492549" />
     <state width="1557" height="217" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1581948529189" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1582048013295">
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1582568492549">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582048013295" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582568492549" />
     <state width="1557" height="217" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1581948529189" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1582048013294">
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1582568492549">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582048013294" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582568492549" />
     <state width="1557" height="217" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1581948529189" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1582048013295">
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1582568492549">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582048013295" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582568492549" />
     <state width="1557" height="217" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1581948529189" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582045603343">
       <screen x="-1920" y="-102" width="1920" height="1040" />
@@ -231,10 +256,14 @@
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582045603343" />
     <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1581946473159" />
-    <state x="-1584" y="-96" key="SettingsEditor" timestamp="1582041314517">
+    <state x="-1788" y="162" key="IDE.errors.dialog" timestamp="1582564358453">
       <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
-    <state x="-1584" y="-96" key="SettingsEditor/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582041314517" />
+    <state x="-1788" y="162" key="IDE.errors.dialog/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582564358453" />
+    <state x="-1584" y="-96" key="SettingsEditor" timestamp="1582564805705">
+      <screen x="-1920" y="-102" width="1920" height="1040" />
+    </state>
+    <state x="-1584" y="-96" key="SettingsEditor/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582564805705" />
     <state x="280" y="5" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1581801677656" />
     <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1582015852773">
       <screen x="0" y="0" width="1600" height="860" />
@@ -254,9 +283,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="56" y="199" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1581875244438" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1581925529033">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="-1364" y="116" width="807" height="820" key="search.everywhere.popup" timestamp="1582563615232">
+      <screen x="-1920" y="-102" width="1920" height="1040" />
     </state>
+    <state x="-1364" y="116" width="807" height="820" key="search.everywhere.popup/0.0.1600.860/-1920.-102.1920.1040@-1920.-102.1920.1040" timestamp="1582563615232" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1581925529033" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

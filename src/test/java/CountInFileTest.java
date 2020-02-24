@@ -1,3 +1,5 @@
+import org.example.utils.CountInFile;
+import org.example.commons.FilePath;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
@@ -11,7 +13,7 @@ class CountInFileTest {
 
 
     Map<String, Integer> words = new HashMap<>();
-    String path = "test.txt";
+    String path = "src/test/resources/test.txt";
     FilePath filePath = new FilePath();
 
     @Test

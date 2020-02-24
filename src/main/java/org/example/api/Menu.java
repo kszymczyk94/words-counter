@@ -1,4 +1,10 @@
-import java.io.FileNotFoundException;
+package org.example.api;
+
+
+import org.example.utils.CountInFile;
+import org.example.commons.FileCreator;
+import org.example.commons.FilePath;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -201,7 +207,6 @@ public class Menu {
                     System.out.println();
                     System.out.println();
                     System.out.println("Liczba znaków tym pliku to: " + CountInFile.countAllSign());
-                    System.out.print(CountInFile.countAllSign());
                 } else {
                     System.out.println("Najpierw stwórz lub wybierz plik.");
 

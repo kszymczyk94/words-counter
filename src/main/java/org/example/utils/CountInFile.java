@@ -1,5 +1,4 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
+package org.example.utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;

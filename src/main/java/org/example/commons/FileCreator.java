@@ -1,17 +1,15 @@
-import jdk.jfr.events.FileWriteEvent;
+package org.example.commons;
 
-import java.io.File;
+
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class FileCreator {
 
-    public String setNameWriteText(ArrayList textList) {
+    public String setNameWriteText(List<String> textList) {
         System.out.println("Podaj nazwę pliku (opcjonalnie wraz ze ścieżką: )");
         System.out.println("Uwaga jeżeli plik o podanej nazwie już istnieje zostanie on nadpisany.");
         String fileName;
@@ -37,7 +35,7 @@ public class FileCreator {
         return fileName;
     }
 
-    public void createFile(String fileName, ArrayList<String> textList) throws IOException {
+    public void createFile(String fileName, List<String> textList) throws IOException {
         FileWriter fileWriter = null;
 
 

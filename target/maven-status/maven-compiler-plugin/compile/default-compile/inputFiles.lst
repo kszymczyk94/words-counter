@@ -1,4 +1,5 @@
-C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\CountInFile.java
-C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\Menu.java
-C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\AppMain.java
-C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\FilePath.java
+C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\org\example\utils\CountInFile.java
+C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\org\example\AppMain.java
+C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\org\example\commons\FilePath.java
+C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\org\example\commons\FileCreator.java
+C:\Users\hooli\Documents\GitHub\VotingSystem\words-counter\src\main\java\org\example\api\Menu.java

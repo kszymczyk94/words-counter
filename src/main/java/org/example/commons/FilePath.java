@@ -1,7 +1,6 @@
+package org.example.commons;
 
-
-import lombok.Getter;
-import lombok.Setter;
+import org.example.utils.CountInFile;
 
 import java.io.File;
 import java.nio.file.Paths;
@@ -40,7 +39,6 @@ public class FilePath {
             }
         } else {
             if (isFileExist(path)) {
-                //System.out.println("Tutaj jestem");
                 CountInFile.setFilePath(Paths.get(path).toString());
             } else {
                 System.out.println(path);
